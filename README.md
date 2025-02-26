@@ -1,4 +1,4 @@
-<img src="./figures/LearningDynamics1D1.gif" alt="Learning Dynamics Eg 1D"  width="360" />  &nbsp;&nbsp;&nbsp;&nbsp; &emsp; &emsp;&emsp;&emsp; <img src="./figures/LearningDynamics2D1.gif" alt="Learning Dynamics Eg 2D"  width="340" />
+<img src="./figures/LearningDynamics1D1.gif" alt="Learning Dynamics Eg 1D"  width="360" />  &nbsp;&nbsp;&nbsp; &emsp; &emsp;&emsp;&emsp; <img src="./figures/LearningDynamics2D1.gif" alt="Learning Dynamics Eg 2D"  width="340" />
 
 
 This is the github repo for the paper "**Fourier Multi-Component and Multi-Layer Neural Networks: Unlocking High-Frequency Potential.**"
@@ -22,7 +22,7 @@ $$
 
 Click [here](https://shijunzhang.top/file/img/html/f1.html) to see an illustation of $f_1$.
 
-<img src="./figures/LearningDynamics1D2.gif" alt="Learning Dynamics Eg 1D"  width="800" />
+<img src="./figures/LearningDynamics1D2.gif" alt="Learning Dynamics Eg 1D"  width="600" />
 
 2. Using an FMMNN of size (1024, 36, 8) to approximate
    
@@ -62,7 +62,7 @@ $$
 Click [here](https://shijunzhang.top/file/img/html/f2.html) to see an illustation of $f_2$.
 
 
-<img src="./figures/LearningDynamics2D2.gif" alt="Learning Dynamics Eg 2D"  width="800" />
+<img src="./figures/LearningDynamics2D2.gif" alt="Learning Dynamics Eg 2D"  width="600" />
 
 
 

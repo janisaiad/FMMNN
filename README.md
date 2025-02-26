@@ -1,6 +1,6 @@
 <img src="./figures/LearningDynamics2D.gif" alt="Learning Dynamics Eg 2D"  width="300" /> <img src="./figures/LearningDynamics1D1.gif" alt="Learning Dynamics Eg 1D"  width="360" />
 
-This is the github repo for the paper "Fourier Multi-Component and Multi-Layer Neural Networks: Unlocking High-Frequency Potential". 
+This is the github repo for the paper "**Fourier Multi-Component and Multi-Layer Neural Networks: Unlocking High-Frequency Potential.**"
 
 # Abstract
 
@@ -9,7 +9,7 @@ In this work, we introduce a surprisingly effective synergy, termed the Fourier 
 First, we theoretically establish that FMMNNs have exponential expressive power in terms of approximation capacity.  Next, we analyze the optimization landscape of FMMNNs and show that it is significantly more favorable compared to fully connected neural networks. Finally, systematic and extensive numerical experiments validate our findings, demonstrating that FMMNNs consistently achieve superior accuracy and efficiency across various tasks, particularly impressive when high-frequency components are present.
 
 
-## Numerical experiments
+# Numerical experiments
 
 In our paper, we perform extensive experiments to validate our analysis and demonstrate the effectiveness of MMNNs. Below are some selected examples; for additional examples, please refer to our paper.
 
@@ -54,11 +54,17 @@ $$
 \end{bmatrix}.
 $$
 
+Click [here]() to see an illustation of $f_2$.
+<a href="./figures/f2.html" target="_blank" rel="noopener noreferrer">Open in New Tab</a>
+<a href="./figures/f2.html" target="_blank" rel="noopener noreferrer">Open in New Tab</a>
+[Open in New Tab](https://ShijunZhangMath.github.io/FMMNN/figures/f2.html)
+
+
 
 
 
   
-   <img src="./figures/LearningDynamics1D1.gif" alt="Learning Dynamics Eg 1D"  width="480" />
+   <img src="./figures/f2.html" alt="Learning Dynamics Eg 1D"  width="480" />
 
 
 

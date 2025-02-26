@@ -20,7 +20,7 @@ $$
 f_1(x) =0.6\sin(200\pi x) + 0.8\cos(160\pi x^2)+ \frac{1 + 8x^8}{1 + 10x^4} \cdot \left| 180x - 2 \left\lfloor \frac{180x + 1}{2} \right\rfloor \right|.
 $$
 
-Click [here](https://shijunzhang.top/file/img/html/f2.html) to see an illustation of $f_1$.
+Click [here](https://shijunzhang.top/file/img/html/f1.html) to see an illustation of $f_1$.
 
 <img src="./figures/LearningDynamics1D.gif" alt="Learning Dynamics Eg 1D"  width="800" />
 

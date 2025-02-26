@@ -57,6 +57,7 @@ $$
 Click [here]() to see an illustation of $f_2$.
 <a href="./figures/f2.html" target="_blank" rel="noopener noreferrer">Open in New Tab</a>
 <a href="./figures/f2.html" target="_blank" rel="noopener noreferrer">Open in New Tab</a>
+[Open in New Tab](https://ShijunZhangMath.github.io/FMMNN/figures/f2.html)
 
 
 

@@ -1,4 +1,7 @@
-<img src="./figures/LearningDynamics2D.gif" alt="Learning Dynamics Eg 2D"  width="300" /> <img src="./figures/LearningDynamics1D.gif" alt="Learning Dynamics Eg 1D"  width="360" />
+<img src="./figures/LearningDynamics2D.gif" alt="Learning Dynamics Eg 2D"  width="800" />
+
+
+<img src="./figures/LearningDynamics1D.gif" alt="Learning Dynamics Eg 1D"  width="800" />
 
 This is the github repo for the paper "**Fourier Multi-Component and Multi-Layer Neural Networks: Unlocking High-Frequency Potential.**"
 
@@ -18,6 +21,8 @@ In our paper, we perform extensive experiments to validate our analysis and demo
 $$
 f_1(x) =0.6\sin(200\pi x) + 0.8\cos(160\pi x^2)+ \frac{1 + 8x^8}{1 + 10x^4} \cdot \left| 180x - 2 \left\lfloor \frac{180x + 1}{2} \right\rfloor \right|
 $$
+
+<img src="./figures/LearningDynamics1D.gif" alt="Learning Dynamics Eg 1D"  width="800" />
 
 2. Using an FMMNN of size (800, 400, 15) to approximate
    
@@ -60,11 +65,8 @@ Click [here]() to see an illustation of $f_2$.
 [Open in New Tab](https://ShijunZhangMath.github.io/FMMNN/figures/f2.html)
 
 
+<img src="./figures/LearningDynamics2D.gif" alt="Learning Dynamics Eg 2D"  width="800" />
 
-
-
-  
-   <img src="./figures/f2.html" alt="Learning Dynamics Eg 1D"  width="480" />
 
 
 

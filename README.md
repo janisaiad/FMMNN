@@ -24,13 +24,15 @@ $$
 Click [here](https://shijunzhang.top/file/img/html/f1.html) to see an illustation of $f_1$.
 
 
-<iframe
-  id="inlineFrameExample"
-  title="Inline Frame Example"
-  width="300"
-  height="200"
-  src="./figures/f1.html">
-</iframe>
+[Click here for interactive version](./figures/f1.html)
+<div id="iframe-container"></div>
+<script>
+  var iframe = document.createElement('iframe');
+  iframe.src = './figures/f1.html';
+  iframe.width = '300';
+  iframe.height = '200';
+  document.getElementById('iframe-container').appendChild(iframe);
+</script>
 
 
 

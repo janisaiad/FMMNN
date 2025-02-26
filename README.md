@@ -35,19 +35,10 @@ The width of this MMNN is defined as $\max\lbrace n_i : i = 1, 2, \ldots, m-1\rb
 
 In comparison, each layer in a typical deep FCNN takes the form $\sigma(\boldsymbol{W}\boldsymbol{x}+\boldsymbol{b})$, and each hidden neuron is individually a function of the input $\boldsymbol{x}$ or each point $\boldsymbol{x} \in \mathbb{R}^{d_{\text{in}}}$ is mapped to $\mathbb{R}^n$, where $n$ is the layer width. Typically, all weights are training parameters in FCNNs.
 
-For very deep MMNNs, one can borrow ideas from ResNets to address the gradient vanishing issue, making training more efficient. 
 
-1. A MMNN of size $(4,2,2)$, i.e., width $4$, rank 2, and depth $2$.
-   
-<img src="./figures/MMNN.png" alt="MMNN Eg"  width="600" />
+For very deep MMNNs, one can borrow ideas from ResNets to address the gradient vanishing issue, making training more efficient. Furthermore, additional layer operations, such as Batch Normalization [(https://proceedings.mlr.press/v37/ioffe15.html)](https://proceedings.mlr.press/v37/ioffe15.html) and Dropout [(https://jmlr.org/papers/v15/srivastava14a.html)](https://jmlr.org/papers/v15/srivastava14a.html), can also be applied to specific layers of MMNNs to enhance training stability, accelerate convergence, and improve generalization, among other benefits.
 
-
-2. An FCNN of size $(4,2,3)$, i.e., width $4$ and depth $2$.
-   
-<img src="./figures/FCNN.png" alt="MMNN Eg"  width="500" />
-
-
-3. A ResMMNN of size $(4,2,3)$, i.e., width $4$, rank 2, and depth $3$.
+A ResMMNN of size $(6,2,3)$, i.e., width $4$, rank 2, and depth $3$.
    
 <img src="./figures/ResMMNN.png" alt="ResMMNN Eg"  width="800" />
 

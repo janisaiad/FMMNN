@@ -23,6 +23,17 @@ $$
 
 Click [here](https://shijunzhang.top/file/img/html/f1.html) to see an illustation of $f_1$.
 
+
+<iframe
+  id="inlineFrameExample"
+  title="Inline Frame Example"
+  width="300"
+  height="200"
+  src="./figures/f1.html">
+</iframe>
+
+
+
 <img src="./figures/LearningDynamics1D2.gif" alt="Learning Dynamics Eg 1D"  width="600" />
 
 ---

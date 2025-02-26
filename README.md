@@ -54,7 +54,8 @@ $$
 \end{bmatrix}.
 $$
 
-Click [here](./figures/f2.html) to see an illustation of $f_2$.
+Click [here]() to see an illustation of $f_2$.
+<a href="./figures/f2.html" target="_blank" rel="noopener noreferrer">Open in New Tab</a>
 
 
 

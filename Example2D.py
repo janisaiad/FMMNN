@@ -21,17 +21,17 @@ def func(x):
             [0.2,0.3]
     ]
     
-    b=[2*np.pi,4*np.pi]
+    b=[12*np.pi,8*np.pi]
     
-    c=[ [2*np.pi,4*np.pi],
-        [8*np.pi,4*np.pi]
+    c=[ [4*np.pi,18*np.pi],
+        [16*np.pi,10*np.pi]
     ]
     
-    d=[ [4*np.pi,6*np.pi],
-        [8*np.pi,6*np.pi]
+    d=[ [14*np.pi,12*np.pi],
+        [18*np.pi,10*np.pi]
     ]
 
-    r=2
+    r=1
     a=np.array(a)
     b=np.array(b)*r
     c=np.array(c)*r

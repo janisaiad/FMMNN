@@ -1,7 +1,7 @@
-<img src="./figures/LearningDynamics2D.gif" alt="Learning Dynamics Eg 2D"  width="800" />
+<img src="./figures/LearningDynamics1D.gif" alt="Learning Dynamics Eg 1D"  width="500" />
 
+<img src="./figures/LearningDynamics2D.gif" alt="Learning Dynamics Eg 2D"  width="500" />
 
-<img src="./figures/LearningDynamics1D.gif" alt="Learning Dynamics Eg 1D"  width="800" />
 
 This is the github repo for the paper "**Fourier Multi-Component and Multi-Layer Neural Networks: Unlocking High-Frequency Potential.**"
 
@@ -19,8 +19,10 @@ In our paper, we perform extensive experiments to validate our analysis and demo
 1. Using an FMMNN of size (800, 400, 15) to approximate
 
 $$
-f_1(x) =0.6\sin(200\pi x) + 0.8\cos(160\pi x^2)+ \frac{1 + 8x^8}{1 + 10x^4} \cdot \left| 180x - 2 \left\lfloor \frac{180x + 1}{2} \right\rfloor \right|
+f_1(x) =0.6\sin(200\pi x) + 0.8\cos(160\pi x^2)+ \frac{1 + 8x^8}{1 + 10x^4} \cdot \left| 180x - 2 \left\lfloor \frac{180x + 1}{2} \right\rfloor \right|.
 $$
+
+Click [here](https://shijunzhang.top/file/img/html/f2.html) to see an illustation of $f_1$.
 
 <img src="./figures/LearningDynamics1D.gif" alt="Learning Dynamics Eg 1D"  width="800" />
 
@@ -59,10 +61,7 @@ $$
 \end{bmatrix}.
 $$
 
-Click [here]() to see an illustation of $f_2$.
-<a href="./figures/f2.html" target="_blank" rel="noopener noreferrer">Open in New Tab</a>
-<a href="./figures/f2.html" target="_blank" rel="noopener noreferrer">Open in New Tab</a>
-[Open in New Tab](https://ShijunZhangMath.github.io/FMMNN/figures/f2.html)
+Click [here](https://shijunzhang.top/file/img/html/f2.html) to see an illustation of $f_2$.
 
 
 <img src="./figures/LearningDynamics2D.gif" alt="Learning Dynamics Eg 2D"  width="800" />

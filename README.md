@@ -19,6 +19,8 @@ $$
 f_1(x) =0.6\sin(200\pi x) + 0.8\cos(160\pi x^2)+ \frac{1 + 8x^8}{1 + 10x^4} \cdot \left| 180x - 2 \left\lfloor \frac{180x + 1}{2} \right\rfloor \right|
 $$
 
+2. Using an FMMNN of size (800, 400, 15) to approximate
+   
 $$
 f_2(x_1, x_2) = \sum_{i=1}^2 \sum_{j=1}^2 a_{ij} \sin(b_i x_i +  c_{ij} x_i x_j)\cdot  \big|\cos( b_j x_j +  d_{ij} x_i^2)\big|,
 $$
@@ -58,22 +60,5 @@ $$
   
    <img src="./figures/LearningDynamics1D1.gif" alt="Learning Dynamics Eg 1D"  width="480" />
 
-3. Learning process of $f(x)=\sin(36\pi |x|^{1.5})$ approximated by a ResMMNN of size (800, 40, 15).
-  
-   <img src="./figures/LearningDynamics1D2.gif" alt="Learning Dynamics Eg 1D"  width="480" />
-
-4. Learning process of $f$ approximated by a MMNN of size (500, 20, 8), where $f$ is a 2D function defined in polar coordinates $(r, \theta)$ as
-
-$$
-f(r, \theta) = 
-\begin{cases} 
-0 & \text{if } 0.5 + 5\rho - 5r \leq 0, \\
-1 & \text{if } 0.5 + 5\rho - 5r \geq 1, \\
-0.5 + 5\rho - 5r & \text{otherwise},
-\end{cases}
-\qquad \text{where}\qquad  \rho = 0.5 + 0.1 \cos(\pi^2 \theta^2).
-$$
-  
-   <img src="./figures/LearningDynamics2D.gif" alt="Learning Dynamics Eg 2D"  width="400" />
 
 

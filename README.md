@@ -11,17 +11,29 @@ First, we theoretically establish that FMMNNs have exponential expressive power 
 
 ## Numerical experiments
 
-In our paper, we perform extensive experiments to validate our analysis and demonstrate the effectiveness of MMNNs. In particular, our tests show its ability in 1) adaptively capturing localized high-frequency features, 2) approximating highly oscillatory functions, and 3) extending to higher dimensions as well as some interesting learning dynamics. Below are some selected examples; for additional examples, please refer to our paper.
+In our paper, we perform extensive experiments to validate our analysis and demonstrate the effectiveness of MMNNs. Below are some selected examples; for additional examples, please refer to our paper.
 
-1. Learning process of $f(x)=\sin(50\pi x)$ approximated by a ResMMNN of size (800, 400, 15).
+1. Using an FMMNN of size (800, 400, 15) to approximate
+$$
+f_1(x) =
+0.6\sin(200\pi x) + 0.8\cos(160\pi x^2)
++ \frac{1 + 8x^4}{1 + 10x^2} \cdot \left| 180x - 2 \left\lfloor \frac{180x + 1}{2} \right\rfloor \right|
+$$
+
+
+
+$$
+f_2(x_1, x_2) = \sum_{i=1}^2 \sum_{j=1}^2 a_{ij} \sin(b_i x_i +  c_{ij} x_i x_j)\cdot  \big|\cos( b_j x_j +  d_{ij} x_i^2)\big|
+$$
+
   
    <img src="./figures/LearningDynamics1D1.gif" alt="Learning Dynamics Eg 1D"  width="480" />
 
-2. Learning process of $f(x)=\sin(36\pi |x|^{1.5})$ approximated by a ResMMNN of size (800, 40, 15).
+3. Learning process of $f(x)=\sin(36\pi |x|^{1.5})$ approximated by a ResMMNN of size (800, 40, 15).
   
    <img src="./figures/LearningDynamics1D2.gif" alt="Learning Dynamics Eg 1D"  width="480" />
 
-3. Learning process of $f$ approximated by a MMNN of size (500, 20, 8), where $f$ is a 2D function defined in polar coordinates $(r, \theta)$ as
+4. Learning process of $f$ approximated by a MMNN of size (500, 20, 8), where $f$ is a 2D function defined in polar coordinates $(r, \theta)$ as
 
 $$
 f(r, \theta) = 

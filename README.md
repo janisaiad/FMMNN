@@ -14,7 +14,7 @@ First, we theoretically establish that FMMNNs have exponential expressive power 
 
 In our paper, we perform extensive experiments to validate our analysis and demonstrate the effectiveness of MMNNs. Below are some selected examples; for additional examples, please refer to our paper.
 
-1. Using an FMMNN of size (1024, 16, 6) to approximate
+1. `(Example1D.py)` Using an FMMNN of size (1024, 16, 6) to approximate
 
 $$
 f_1(x) =0.6\sin(200\pi x) + 0.8\cos(160\pi x^2)+ \frac{1 + 8x^8}{1 + 10x^4} \cdot \left| 180x - 2 \left\lfloor \frac{180x + 1}{2} \right\rfloor \right|.
@@ -24,7 +24,7 @@ Click [here](https://shijunzhang.top/file/img/html/f1.html) to see an illustatio
 
 <img src="./figures/LearningDynamics1D2.gif" alt="Learning Dynamics Eg 1D"  width="600" />
 
-2. Using an FMMNN of size (1024, 36, 8) to approximate
+2. `(Example2D.py)` Using an FMMNN of size (1024, 36, 8) to approximate
    
 $$
 f_2(x_1, x_2) = \sum_{i=1}^2 \sum_{j=1}^2 a_{ij} \sin(b_i x_i +  c_{ij} x_i x_j)\cdot  \big|\cos( b_j x_j +  d_{ij} x_i^2)\big|,

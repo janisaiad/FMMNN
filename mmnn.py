@@ -15,7 +15,8 @@ class MMNN(nn.Module):
         Attributes:
             ranks (list[int]): A list where the i-th element represents the output dimension of the i-th layer.
                                For the j-th layer, ranks[j-1] is the input dimension and ranks[j] is the output dimension.
-                               Specifically, ranks[0] is the input dim and ranks[-1] is the output dim of the network.
+                               Specifically, ranks[0] represents the input dimension, 
+                               while ranks[-1] corresponds to the output dimension of the network.
             
             widths (list[int]): A list where each element specifies the width of the corresponding layer.
             

@@ -2,7 +2,7 @@
 
 ***
 
-This is the github repo for the paper "**Fourier Multi-Component and Multi-Layer Neural Networks: Unlocking High-Frequency Potential.**"
+This is the github repo for the paper "**Fourier Multi-Component and Multi-Layer Neural Networks: Unlocking High-Frequency Potential**"[https://arxiv.org/abs/2502.18959](https://arxiv.org/abs/2502.18959).
 
 # Abstract
 

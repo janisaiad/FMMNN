@@ -3,6 +3,9 @@
 ***
 
 This is the github repo for the paper "**Fourier Multi-Component and Multi-Layer Neural Networks: Unlocking High-Frequency Potential**"[https://arxiv.org/abs/2502.18959](https://arxiv.org/abs/2502.18959).
+<br><br>
+**<span style="color:red">We scale the initialization of \( W_0 \) and \( b_0 \), introduced in the revised algorithm on June 13, 2025, to significantly speed up convergence.</span>**
+
 
 # Abstract
 
@@ -13,7 +16,6 @@ First, we theoretically establish that FMMNNs have exponential expressive power 
 
 # Numerical experiments
 **<span style="color:red">Scaling the initialization of \( W_0 \) and \( b_0 \) (introduced in the revised algorithm on June 13, 2025)</span> can significantly speed up convergence.**  However, <span style="color:red">all numerical experiments below were conducted without this scaling</span>, so that we can observe the full convergence process, even though it converges more slowly.
-
 
 
 In our paper, we perform extensive experiments to validate our analysis and demonstrate the effectiveness of MMNNs. Below are some selected examples; for additional examples, please refer to our paper.

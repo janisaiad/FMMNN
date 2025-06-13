@@ -67,7 +67,8 @@ widths = [1024]*8
 model = mmnn.MMNN(ranks = ranks, 
                  widths = widths,
                  device = device,
-                 ResNet = False)
+                 ResNet = False,
+                 init_scaling = True)
 
    
 x1 = np.linspace(*interval, training_samples_gridsize[0])
@@ -102,7 +103,7 @@ for epoch in range(1,1+num_epochs):
     
     scheduler.step()
               
-    if epoch % 2 == 0:
+    if epoch % 1 == 0:
         training_error = loss.item()
         print(f"\nEpoch {epoch} / {num_epochs}" + 
               f"  ( {epoch/num_epochs*100:.2f}% )" +
@@ -131,7 +132,7 @@ for epoch in range(1,1+num_epochs):
         print("Test errors (MAX and MSE): " + 
               f"{e_max:.2e} and {e_mse:.2e}")
         
-        if epoch % 4 == 0:
+        if epoch % 1 == 0:
             # Plot the results
             gridsize=[150, 150]
             x1 = np.linspace(*interval, gridsize[0])

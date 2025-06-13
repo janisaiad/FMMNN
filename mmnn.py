@@ -7,7 +7,8 @@ class MMNN(nn.Module):
                  widths = [666]*6,
                  device = "cpu", 
                  ResNet = False,
-                 fixWb = True):
+                 fixWb = True,
+                 init_scaling = True):
         super().__init__()
         """
         A class to configure the neural network model.
@@ -25,6 +26,8 @@ class MMNN(nn.Module):
             ResNet (bool): Indicates whether to use ResNet architecture, which includes identity connections between layers.
             
             fixWb (bool): If True, the weights and biases are not updated during training.
+
+            init_scaling (bool): If True, scales the weight and biase (W0 and b0) in the first affine map to greatly accelerate convergence.
         """
         
         self.ranks = ranks
@@ -49,6 +52,11 @@ class MMNN(nn.Module):
                 if j % 2 == 0:
                     self.fcs[j].weight.requires_grad = False
                     self.fcs[j].bias.requires_grad = False
+                if j==0 and init_scaling:
+                    s = widths[0]/2
+                    s = s**(1/ranks[0])*ranks[0]**0.5
+                    self.fcs[j].weight.data = s * self.fcs[j].weight.data
+                    self.fcs[j].bias.data = s * self.fcs[j].bias.data
  
 
     def forward(self, x):

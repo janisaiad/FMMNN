@@ -12,7 +12,7 @@ First, we theoretically establish that FMMNNs have exponential expressive power 
 
 
 # Numerical experiments
-**<span style="color:red">Scaling the initialization of \( W_0 \) and \( b_0 \) (introduced in the revised algorithm on June 13, 2025)</span> can significantly speed up convergence.**  However, **<span style="color:red">all numerical experiments below were conducted without this scaling</span>**, so that we can observe the full convergence process, even though it converges more slowly.
+**<span style="color:red">Scaling the initialization of \( W_0 \) and \( b_0 \) (introduced in the revised algorithm on June 13, 2025)</span> can significantly speed up convergence.**  However, <span style="color:red">all numerical experiments below were conducted without this scaling</span>, so that we can observe the full convergence process, even though it converges more slowly.
 
 
 

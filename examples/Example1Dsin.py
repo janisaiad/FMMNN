@@ -43,7 +43,8 @@ model = FMMNN(ranks = ranks,
                  widths = widths,
                  device = device,
                  ResNet = False,
-                 fixWb = True)
+                 fixWb = True,
+                 init_scaling = True)
 
 
 x_train = np.linspace(*interval, num_training_samples).reshape([-1, 1])

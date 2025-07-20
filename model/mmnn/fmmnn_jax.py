@@ -15,7 +15,7 @@ class FMMNNJax(nn.Module):
     init_scaling: bool = True # if true, initialize weights and biases with scaling factor
     
     
-    @nn.compact
+    
     def setup(self):
         """initialize the model layers."""
         self.depth = len(self.widths)
@@ -57,7 +57,7 @@ class FMMNNJax(nn.Module):
 # We'll need to handle the fix_wb logic in the training loop
 # by filtering the parameters
 
-    @nn.compact
+    
     def __call__(self, x):
         """Forward pass of the model.
         
@@ -81,6 +81,6 @@ class FMMNNJax(nn.Module):
                     n = min(x.shape[1], x_id.shape[1])
                     x = x.at[:,:n].add(x_id[:,:n])
     
-        x = jax.nn.sin(x)
+        x = jnp.sin(x)
         x = self.fcs[-1](x)
         return x

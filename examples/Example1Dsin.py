@@ -5,7 +5,7 @@ from torch.optim.lr_scheduler import StepLR
 import numpy as np
 import matplotlib.pyplot as plt
 import time,os
-import mmnn
+from mmnn import FMMNN
 
 # torch.set_default_dtype(torch.float64)
 mydtype = torch.get_default_dtype()
@@ -39,11 +39,11 @@ show_plot = True
 interval=[-1,1]
 ranks = [1] + [16]*5 + [1]
 widths = [1024]*6
-model = mmnn.MMNN(ranks = ranks, 
+model = FMMNN(ranks = ranks, 
                  widths = widths,
                  device = device,
                  ResNet = False,
-                 init_scaling = True)
+                 fixWb = True)
 
 
 x_train = np.linspace(*interval, num_training_samples).reshape([-1, 1])

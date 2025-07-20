@@ -5,7 +5,7 @@ from torch.optim.lr_scheduler import StepLR
 import numpy as np
 import matplotlib.pyplot as plt
 import time,os
-import mmnn
+from mmnn import FMMNN
 
 ## 2D function Example
 
@@ -64,11 +64,11 @@ show_plot = True
 interval=[-1,1]
 ranks = [2] + [36]*7 + [1]
 widths = [1024]*8
-model = mmnn.MMNN(ranks = ranks, 
+model = FMMNN(ranks = ranks, 
                  widths = widths,
                  device = device,
                  ResNet = False,
-                 init_scaling = True)
+                 fixWb = True)
 
    
 x1 = np.linspace(*interval, training_samples_gridsize[0])
